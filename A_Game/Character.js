@@ -1,4 +1,5 @@
 function Character() {
+  this.r = 17;
   this.x = width/2;
   this.y = height/2;
   this.targetX = mouseX;
@@ -18,8 +19,9 @@ function Character() {
   }
   
   this.show = function() {
+    stroke('rgb(0,255,0)');
     fill(255);
-    ellipse(this.x,this.y,35,35)
+    ellipse(this.x,this.y,this.r * 2,this.r * 2)
   }
 }
 
