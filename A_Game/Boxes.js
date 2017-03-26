@@ -9,15 +9,15 @@ function Box () {
     rect(this.x,this.y,this.size * 2,this.size * 2);
   }
   
-  this.change_scene = function(scene) {
+  this.change_scene = function(scene,bgs) {
     if (scene == 0) {
-      background(0);
+      background(bgs[0]);
       noLoop();
     } else if (scene == 1) {
-      background(102);
+      background(bgs[1]);
       noLoop();
     } else {
-      background(180);
+      background(bgs[2]);
       noLoop();
     }
   }
